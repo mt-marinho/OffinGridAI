@@ -1,0 +1,19 @@
+{
+  "$schema": "https://reacticx.com/schema/component.config.json",
+  "outDir": "src/presentation/components/ui",
+  "aliases": {
+    "components": "@/presentation/components/ui",
+    "utils": "@/presentation/components/utils",
+    "hooks": "@/presentation/components/hooks"
+  },
+  "paths": {
+    "utils": "src/presentation/components/utils",
+    "hooks": "src/presentation/components/hooks",
+    "types": "src/presentation/components/types",
+    "examples": "src/presentation/components/examples"
+  },
+  "include": {
+    "types": true
+  },
+  "packageManager": "npm"
+}
