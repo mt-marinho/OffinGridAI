@@ -91,20 +91,6 @@ const BorderBeam: React.FC<IBorderBeam> & React.FunctionComponent<IBorderBeam> =
       return (
         <View style={style}>
           <View onLayout={onLayout}>{children}</View>
-
-          {effect && size.width > 0 ? (
-            <Canvas
-              pointerEvents="none"
-              style={[
-                styles.canvas,
-                { top: -_PAD, left: -_PAD, right: -_PAD, bottom: -_PAD },
-              ]}
-            >
-              <Fill>
-                <Shader source={effect} uniforms={uniforms} />
-              </Fill>
-            </Canvas>
-          ) : null}
         </View>
       );
     },
